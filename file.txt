@@ -1,0 +1,23 @@
+Nome tabella: used_cars
+
+
+id: BIGINT, PRIMARY_KEY(NOTNULL, UNIQUE, AUTOINCREMENT, INDEX)
+brand: VARCHAR(50), NOTNULL
+model: VARCHAR(50), NOTNULL
+color: VARCHAR(20), NULL
+number_of_seats: TINYINT, NULL
+number_of_doors: TINYINT, NULL
+class: VARCHAR(20), NULL
+price: DECIMAL(7,2), NOTNULL
+powered: VARCHAR(20), NOTNULL
+year_of_registration: YEAR, NOTNULL
+mileage:  DECIMAL(6,2), NOTNULL
+transmission: VARCHAR(20), NULL
+original_motor: TINYINT, NULL
+displacement: DECIMAL(6,2), NOTNULL
+previous_owners: TINYINT, DEFAULT(1), NULL
+original_country: VARCHAR(20), NULL
+license_plate: VARCHAR(20), NULL
+commercial_use: TINYINT, NULL
+
+
